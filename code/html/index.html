@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>bmi-calculator</title>
+</head>
+<body>
+    <main id="container">
+        <section id="img">
+            <img src="../../img/illustration.svg">
+        </section>
+
+        <section id="calculator">
+            <form id="form">
+                <h1 id="tittle">
+                    BMI - Calculator
+                </h1>
+
+                <div class="input-box">
+                    <label for="weight">
+                        Weight in kg
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="weight" required>
+                        <span>
+                            KG
+                        </span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="Height">
+                        Height in meters
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" step="any" id="height" required>
+                        <span>
+                            Meters
+                        </span>
+                    </div>
+                </div>
+
+                <button id="calculate">
+                    <p>Calculate</p>
+                </button>
+            </form>
+
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Your BMI</span>
+                    </div>
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+                <div id="more_info">
+                    <a href="https://www.everydayhealth.com/diet-nutrition/bmi/your-bmi-normal-how-body-weight-can-affect-your-health/" target="_blank">
+                        More informations about BMI
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../../code/javascript/scripts.js"></script>
+</body>
+</html>
